@@ -28,6 +28,7 @@
       overflow-x: hidden;
     }
 
+    
     /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -161,6 +162,23 @@
     }
     @keyframes scrollDrop { 0%{transform:scaleY(0);transform-origin:top} 50%{transform:scaleY(1);transform-origin:top} 51%{transform-origin:bottom} 100%{transform:scaleY(0);transform-origin:bottom} }
     @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+
+    /* CONTACT */
+    .ft-brand p{
+      color:rgba(255,255,255,0.55);
+    }
+
+    .ft-col a{
+      text-decoration:none;
+      color:rgba(255,255,255,0.5);
+      transition:0.2s;
+    }
+
+    .ft-col a:hover{
+      color:white;
+    }
+
+
 
     /* PIPELINE */
     .pipeline { background: var(--off); }
@@ -766,6 +784,57 @@
 
 </section>
 
+<section class="advisory" id="advisory">
+  <div class="reveal">
+    <div class="eyebrow">Strategic Advisory</div>
+
+    <h2>
+      Advisory Perspectives on<br />
+      <em>Enterprise Legal Intelligence</em>
+    </h2>
+
+    <p class="lead">
+      Hart Solutionz provides strategic perspectives on how modern law firms and enterprise legal teams can evolve toward governed legal intelligence ecosystems — integrating institutional knowledge, semantic retrieval, AI-assisted reasoning, and defensible legal workflows.
+    </p>
+  </div>
+
+  <div class="fw-grid reveal">
+
+    <div class="fw-card">
+      <div class="fw-icon">🧭</div>
+      <h3>Architecture Direction</h3>
+      <p>
+        Evaluating how legal repositories, AI platforms, retrieval systems, and knowledge ecosystems can operate together under a unified legal intelligence model.
+      </p>
+    </div>
+
+    <div class="fw-card">
+      <div class="fw-icon">⚖️</div>
+      <h3>Governance & Risk Perspective</h3>
+      <p>
+        Framing approaches for confidentiality, defensibility, institutional trust, legal oversight, and controlled AI augmentation within legal environments.
+      </p>
+    </div>
+
+    <div class="fw-card">
+      <div class="fw-icon">🏛</div>
+      <h3>Institutional Knowledge Strategy</h3>
+      <p>
+        Exploring how mature legal work product, negotiation history, advisory intelligence, and precedent repositories can become active institutional memory systems.
+      </p>
+    </div>
+
+    <div class="fw-card">
+      <div class="fw-icon">🔍</div>
+      <h3>Technology & Platform Evaluation</h3>
+      <p>
+        Comparative perspectives on legal AI architecture patterns, semantic retrieval approaches, vector intelligence, RAG frameworks, and enterprise integration models.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 <!-- PUBLISHING -->
 <section class="publishing" id="publishing">
   <div class="pub-grid">
@@ -791,43 +860,86 @@
       <div class="pub-mission">
         <h3>Our Position</h3>
         <p>Hart Solutionz is a publishing and thought-leadership platform focused on the future of institutional legal intelligence, legal AI architecture, and enterprise legal knowledge ecosystems.</p>
-        <p>We are not an implementation company, systems integrator, or consulting delivery firm. We articulate the vision — the architectural direction, the strategic rationale, and the conceptual frameworks — for how modern law firms can intelligently evolve.</p>
+        <p>We are not an implementation company, systems integrator, or consulting delivery firm. We provide strategic perspectives, architectural direction, and advisory thinking — for how modern law firms can intelligently evolve.</p>
         <p>The goal is to give legal leaders a clear, well-reasoned perspective on where the industry is heading and what a truly integrated legal intelligence system looks like in practice.</p>
       </div>
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
+
 <footer>
+
   <div class="ft">
+
     <div class="ft-brand">
-      <div class="logo">Hart <span style="color:rgba(255,255,255,0.75)">Solutionz</span></div>
-      <p>Publishing and thought leadership on enterprise legal intelligence, AI-augmented legal workflows, and institutional knowledge systems.</p>
+
+      <div class="logo">
+        Hart <span style="color:white;">Solutionz</span>
+      </div>
+
+      <p style="
+        margin-top:1rem;
+        max-width:320px;
+        line-height:1.8;
+        font-size:0.84rem;
+      ">
+        Publishing and thought leadership on enterprise legal intelligence,
+        institutional knowledge systems, and AI-augmented legal workflows.
+      </p>
+
     </div>
+
     <div class="ft-col">
+
       <h4>Platform</h4>
+
       <ul>
         <li><a href="#pipeline">The Pipeline</a></li>
         <li><a href="#framework">Framework</a></li>
+        <li><a href="#architecture">Architecture</a></li>
         <li><a href="#usecases">Use Cases</a></li>
         <li><a href="#publishing">Publishing</a></li>
       </ul>
+
     </div>
+
     <div class="ft-col">
-      <h4>Focus Areas</h4>
+
+      <h4>Contact</h4>
+
       <ul>
-        <li><a href="#">Enterprise Legal Intelligence</a></li>
-        <li><a href="#">Legal AI Architecture</a></li>
-        <li><a href="#">Institutional Knowledge</a></li>
-        <li><a href="#">Semantic Legal Search</a></li>
+        <li>
+          <a href="mailto:contact@hartsolutionz.com">
+            contact@hartsolutionz.com
+          </a>
+        </li>
+
+        <!-- OPTIONAL LINKEDIN -->
+        <!--
+        <li>
+          <a href="#">LinkedIn</a>
+        </li>
+        -->
+
       </ul>
+
     </div>
+
   </div>
+
   <div class="ft-bottom">
-    <span>© 2025 Hart Solutionz. All rights reserved.</span>
-    <span>A Thought Leadership &amp; Legal Intelligence Initiative</span>
+
+    <span>
+      © 2025 Hart Solutionz. All rights reserved.
+    </span>
+
+    <span>
+      A Legal Intelligence & Thought Leadership Initiative
+    </span>
+
   </div>
+
 </footer>
 
 <script>
